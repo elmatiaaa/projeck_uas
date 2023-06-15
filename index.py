@@ -40,6 +40,23 @@ with upload_data:
     st.dataframe(df)
 
 with preprocessing:
+    st.subheader("""Normalisasi Data""")
+    st.write("""Rumus Normalisasi Data :""")
+    st.image('https://i.stack.imgur.com/EuitP.png', use_column_width=False, width=250)
+    st.markdown("""
+    Dimana :
+    - X = data yang akan dinormalisasi atau data asli
+    - min = nilai minimum semua data asli
+    - max = nilai maksimum semua data asli
+    """)
+    df = df.drop(columns=['fruit_label','fruit_subtype'])
+    #Mendefinisikan Varible X dan Y
+    X = df[["mass","width","height","color_score"]]
+    y = df["fruit_name"].values
+    df
+    X
+    df_min = X.min()
+    df_max = X.max()
     
     #Mendefinisikan Varible X dan Y
     X = df[['Date','Open','High','Low','Close','Volume']]
