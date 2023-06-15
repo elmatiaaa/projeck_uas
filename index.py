@@ -49,18 +49,10 @@ with preprocessing:
     - min = nilai minimum semua data asli
     - max = nilai maksimum semua data asli
     """)
-    df = df.drop(columns=['fruit_label','fruit_subtype'])
-    #Mendefinisikan Varible X dan Y
-    X = df[["mass","width","height","color_score"]]
-    y = df["fruit_name"].values
-    df
-    X
-    df_min = X.min()
-    df_max = X.max()
-    
+    df = df.drop(columns=['AdjClose'])
     #Mendefinisikan Varible X dan Y
     X = df[['Date','Open','High','Low','Close','Volume']]
-    y = df['AdjClose'].values
+    y = df['Volume'].values
     df
     X
     df_min = X.min()
