@@ -42,7 +42,7 @@ with upload_data:
 with preprocessing:
     
     #Mendefinisikan Varible X dan Y
-    X = df['Date','Open','High','Low','Close','AdjClose']
+    X = df['Date','Open','High','Low','Close','Adj Close']
     y = df['Volume'].values
     df
     X
