@@ -58,10 +58,10 @@ with preprocessing:
     df_min = X.min()
     df_max = X.max()
 
-    scaler = MinMaxScaler()
+    scaled = MinMaxScaler()
     #scaler.fit(features)
     #scaler.transform(features)
-    scaler = scaler.fit_transform(X)
+    scaled = scaler.fit_transform(X)
     features_names = X.columns.copy()
     #features_names.remove('label')
     scaled_features = pd.DataFrame(scaled, columns=features_names)
