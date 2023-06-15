@@ -36,13 +36,13 @@ with upload_data:
     #     df = pd.read_csv(uploaded_file)
     #     st.write("Nama File Anda = ", uploaded_file.name)
     #     st.dataframe(df)
-    df = pd.read_csv('https://raw.githubusercontent.com/elmatiaaa/prosaindata/main/PTRO.JK.csv')
+    df = pd.read_csv('https://raw.githubusercontent.com/elmatiaaa/prosaindata/main/new.csv')
     st.dataframe(df)
 
 with preprocessing:
     
     #Mendefinisikan Varible X dan Y
-    X = df['Date','Open','High','Low','Close','Adj Close']
+    X = df['Date','Open','High','Low','Close','AdjClose']
     y = df['Volume'].values
     df
     X
