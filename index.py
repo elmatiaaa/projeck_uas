@@ -26,55 +26,9 @@ with data_set_description:
     st.write("""# Data Set Description """)
     st.write("###### PT Petrosea Tbk menyediakan teknik, konstruksi, pertambangan, dan layanan lainnya untuk sektor minyak dan gas, infrastruktur, industri dan manufaktur, dan utilitas di Indonesia dan internasional. Ini beroperasi melalui tiga segmen: Pertambangan, Layanan, dan Rekayasa dan Konstruksi. Segmen Pertambangan menyediakan jasa kontrak penambangan, termasuk pengupasan lapisan tanah penutup, pengeboran, peledakan, pengangkatan, pengangkutan, tambang, dan jasa rekanan tambang. Segmen Layanan menawarkan fasilitas basis pasokan dan layanan pelabuhan. Segmen Teknik dan Konstruksi menyediakan serangkaian layanan teknik, pengadaan, dan konstruksi, termasuk uji tuntas teknis, studi kelayakan, desain teknik, manajemen proyek, pengadaan dan logistik, penyewaan pabrik dan peralatan, serta layanan operasi dan komisioning. Segmen ini juga memasok tenaga perdagangan terampil. Perusahaan didirikan pada tahun 1972 dan berkantor pusat di Tangerang Selatan, Indonesia. PT Petrosea Tbk merupakan anak perusahaan dari PT Indika Energy Tbk. Per 28 Juli 2022, PT Petrosea Tbk beroperasi sebagai anak perusahaan PT Caraka Reksa Optima.")
     st.write("###### Sumber Data Set dari Finance yahoo.com : https://github.com/asimcode2050/Asim-Code-Youtube-Channel-Code/blob/main/python/yahoo_finance.py")
-    st.write("""###### Penjelasan setiap kolom : """)
-    st.write("""1. Species (Jenis ) :
-    
-    jenis :Spesies atau jenis adalah suatu peringkat taksonomi yang dipakai dalam klasifikasi biologis untuk merujuk pada satu atau beberapa kelompok individu makhluk hidup (populasi) yang serupa dan dapat saling membuahi satu sama lain di dalam kelompoknya (saling berbagi gen) sehingga menghasilkan keturunan yang fertil (subur).
-    ikan : Ikan adalah anggota vertebrata poikilotermik (berdarah dingin)[1] yang hidup di air dan bernapas dengan insang. Ikan merupakan kelompok vertebrata yang paling beraneka ragam dengan jumlah spesies lebih dari 27,000 di seluruh dunia. Secara taksonomi, ikan tergolong kelompok paraphyletic yang hubungan kekerabatannya masih diperdebatkan; biasanya ikan dibagi menjadi ikan tanpa rahang (kelas Agnatha, 75 spesies termasuk lamprey dan ikan hag), ikan bertulang rawan (kelas Chondrichthyes, 800 spesies termasuk hiu dan pari), dan sisanya tergolong ikan bertulang keras (kelas Osteichthyes).
-    """)
-    st.write("""2. weight (Bobot) :
 
-    bobot : bobot yang di ada di dataset
-    """)
-    st.write("""3. length1 (Panjang1) :
 
-    panjang1 : panjang ikan yang ada  di dataset
-    """)
-    st.write("""4. length1 (Panjang2) :
-
-    panjang2 : panjang ikan yang ada  di dataset
-    """)
-    st.write("""5. length2 (Panjang3) :
-
-    panjang3 : panjang ikan yang ada  di dataset
-    """)
-    st.write("""6. height (Tinggi) :
-
-    tinggi : tinggi ikan yang ada di sataset
-    """)
-    st.write("""7. width (Lrbar) :
-
-    Output (keluaran)
-    """)
-    st.write("""Menggunakan Kolom (input) :
-
-    precipitation
-    tempmax * tempmin
-    wind
-    """)
-    st.write("""Mengklasifikasi ikan di pasar   (output) :
-    
-    1. Bream    : istilah umum bagi sejumlah spesies ikan air tawar dan ikan laut dari beragam genus yang meliputi: Abramis (misalnya A. brama, terkadang disebut bream air tawar).
-    2. Parkki   : -
-    3. Perch    : merupakan spesies ikan yang berwarna perak dengan semburat biru. Mereka memiliki mata hitam gelap yang khas dengan cincin luar berwarna kuning cerah.
-    4. Pike     : ikan dengan bentuk Mulut dan hidung berbentuk moncong dengan gigi terlihat mencolok banyak di rahang. Sirip kekuningan atau coklat kemerahan, punggung, dubur, dan ekor dengan bintik-bintik gelap menyebar. Biasanya ditemukan di air tawar meskipun baru-baru ditemukan hidup dalam air dengan kadar garam yang sedikit lebih rendah dari laut.
-    5. Roach    : merupakan ikan air tawar yang berasal dari perairan di wilayah Eropa dan Asia. Ikan jenis ini mampu hidup di perairan payau. Rutilus ritilus adalah jenis ikan omnivora yang tersebar luas di wilayah Eropa dan menjadi invasif di wilayah Irlandia dan Italia.
-    6. Smelt    : sejenis ikan kecil yang dipakai sebagai umpan.
-    7. Whitefish: adalah satu istilah perikanan yang merujuk kepada beberapa spesies ikan demersal dengan sirip, khususnya kod (Gadus morhua), whiting (Merluccius bilinearis), dan haddock (Melanogrammus aeglefinus).
-    
-    """)
-    st.write("###### Aplikasi ini untuk : Classification on Fish market (Klasifikasi ikan di Pasar) ")
-    st.write("###### Source Code Aplikasi ada di Github anda bisa acces di link : https://github.com/08-Ahlaqul-Karimah/project-data-mining ")
+    st.write("###### Source Code Aplikasi ada di Github anda bisa acces di link : https://elmatiaaa.github.io/prosaindata/Uas_Kelompok.html ")
 
 with upload_data:
     # uploaded_files = st.file_uploader("Upload file CSV", accept_multiple_files=True)
@@ -82,23 +36,14 @@ with upload_data:
     #     df = pd.read_csv(uploaded_file)
     #     st.write("Nama File Anda = ", uploaded_file.name)
     #     st.dataframe(df)
-    df = pd.read_csv('https://raw.githubusercontent.com/08-Ahlaqul-Karimah/machine-Learning/main/Fish.csv')
+    df = pd.read_csv('https://raw.githubusercontent.com/elmatiaaa/prosaindata/main/PTRO.JK.csv')
     st.dataframe(df)
 
 with preprocessing:
-    st.subheader("""Normalisasi Data""")
-    st.write("""Rumus Normalisasi Data :""")
-    st.image('https://i.stack.imgur.com/EuitP.png', use_column_width=False, width=250)
-    st.markdown("""
-    Dimana :
-    - X = data yang akan dinormalisasi atau data asli
-    - min = nilai minimum semua data asli
-    - max = nilai maksimum semua data asli
-    """)
-    df = df.drop(columns=['Length2','Length3'])
+    
     #Mendefinisikan Varible X dan Y
-    X = df[['Weight','Length1','Height','Width']]
-    y = df['Species'].values
+    X = df[['Date','Open','High','Low','Close','Adj Close']]
+    y = df['Volume'].values
     df
     X
     df_min = X.min()
