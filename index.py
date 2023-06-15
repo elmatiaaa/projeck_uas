@@ -14,17 +14,18 @@ from sklearn.tree import DecisionTreeClassifier
 # warnings.filterwarnings("ignore")
 
 
-st.title("PENAMBANGAN DATA C")
+st.title("Data PT Petrosea Tbk")
 
 data_set_description, upload_data, preprocessing, modeling, implementation = st.tabs(["Data Set Description", "Data", "Preprocessing", "Modeling", "Implementation"])
 
 with data_set_description:
-    st.write("##### Nama  : Ahlaqul Karimah M ")
-    st.write("##### Nim   : 200411100008 ")
-    st.write("##### Kelas : Penambangan Data C ")
+    st.write("##### Nama  : Elmatia Dwi Uturiyah ")
+    st.write("##### Nim   : 200411100113 ")
+    st.write("##### Nama  : Santika Damayanti ")
+    st.write("##### Nim   : 200411100076 ")
     st.write("""# Data Set Description """)
-    st.write("###### Data Set Ini Adalah : Classification on Fish market (Klasifikasi dipasar ikan) ")
-    st.write("###### Sumber Data Set dari Kaggle : https://www.kaggle.com/code/hongsean/tutorial-knn-classification-on-fish-market/notebook")
+    st.write("###### PT Petrosea Tbk menyediakan teknik, konstruksi, pertambangan, dan layanan lainnya untuk sektor minyak dan gas, infrastruktur, industri dan manufaktur, dan utilitas di Indonesia dan internasional. Ini beroperasi melalui tiga segmen: Pertambangan, Layanan, dan Rekayasa dan Konstruksi. Segmen Pertambangan menyediakan jasa kontrak penambangan, termasuk pengupasan lapisan tanah penutup, pengeboran, peledakan, pengangkatan, pengangkutan, tambang, dan jasa rekanan tambang. Segmen Layanan menawarkan fasilitas basis pasokan dan layanan pelabuhan. Segmen Teknik dan Konstruksi menyediakan serangkaian layanan teknik, pengadaan, dan konstruksi, termasuk uji tuntas teknis, studi kelayakan, desain teknik, manajemen proyek, pengadaan dan logistik, penyewaan pabrik dan peralatan, serta layanan operasi dan komisioning. Segmen ini juga memasok tenaga perdagangan terampil. Perusahaan didirikan pada tahun 1972 dan berkantor pusat di Tangerang Selatan, Indonesia. PT Petrosea Tbk merupakan anak perusahaan dari PT Indika Energy Tbk. Per 28 Juli 2022, PT Petrosea Tbk beroperasi sebagai anak perusahaan PT Caraka Reksa Optima.")
+    st.write("###### Sumber Data Set dari Finance yahoo.com : https://github.com/asimcode2050/Asim-Code-Youtube-Channel-Code/blob/main/python/yahoo_finance.py")
     st.write("""###### Penjelasan setiap kolom : """)
     st.write("""1. Species (Jenis ) :
     
