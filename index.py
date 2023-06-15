@@ -42,9 +42,7 @@ with preprocessing:
     - min = nilai minimum semua data asli
     - max = nilai maksimum semua data asli
     """)
-    
 
-    
     df = df.drop(columns=['Date'])
     #Mendefinisikan Varible X dan Y
     X = df[['Open','High','Low','Close','AdjClose']]
